@@ -2,6 +2,106 @@
 
 /** 
 Paleta de cores:
-    Verde: #49a09d
+    Verde: #94CFCD
     Lilás: #5f2c82
 **/
+
+
+:root{
+    --cor0: white;
+    --cor1: black;
+    --cor2: #94CFCD;
+    --cor3: #5f2c82;
+    --cor4: #2D6462;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor3);
+}
+
+main{
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+}
+
+section#login{
+    border-radius: 10px;
+    background-color: var(--cor0);
+}
+
+div#imagem{
+    height: 200px;
+    background: black url(../imagens/pexels-fotometrozero-31012596.jpg) center center/contain no-repeat fixed;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div#form{
+    padding: 8px;
+}
+
+div#form h1{
+    padding: 10px 0px;
+}
+
+div#form p{
+    font-size: 0.8em;
+}
+
+div#form input{
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+div.emailsenha{
+    width: 200px;
+    
+    
+}
+
+input.emailsenha{
+    background-color: var(--cor2);
+    border: 3px solid var(--cor3);
+    border-left: 30px solid var(--cor3);
+    height: 40px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+input#entrar{
+    background-color: var(--cor2);
+    border: none;
+    color: var(--cor0);
+    height: 40px;
+    width: 200px;
+}
+
+input#esqueci{
+    border: 2px solid var(--cor2);
+    background-color: var(--cor0);
+    color: var(--cor2);
+    height: 40px;
+    width: 200px;
+}
+
+input#entrar:hover{
+    background-color: var(--cor4);
+    cursor: pointer;
+}
+
+input#esqueci:hover{
+    background-color: var(--cor4);
+    cursor: pointer;
+}
+
+
