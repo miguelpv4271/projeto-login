@@ -26,20 +26,25 @@ body{
 }
 
 main{
-    width: 250px;
     margin: auto;
     text-align: center;
     height: 100vh;
+    position: relative;
 }
 
 section#login{
+    width: 250px;
     border-radius: 10px;
     background-color: var(--cor0);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 div#imagem{
     height: 200px;
-    background: black url(../imagens/pexels-fotometrozero-31012596.jpg) center center/contain no-repeat fixed;
+    background: black url(../imagens/pexels-fotometrozero-31012596.jpg) center center/cover no-repeat fixed;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -54,28 +59,35 @@ div#form h1{
 
 div#form p{
     font-size: 0.8em;
+    text-align: left;
+    padding-left: 17px;
 }
 
 div#form input{
-    display: block;
     padding: 5px;
-    margin: 10px;
     border-radius: 5px;
 }
 
 div.emailsenha{
     width: 200px;
+    background-color: var(--cor3);
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
     
-    
+}
+
+span.material-symbols-outlined{
+    color: var(--cor0);
 }
 
 input.emailsenha{
     background-color: var(--cor2);
-    border: 3px solid var(--cor3);
-    border-left: 30px solid var(--cor3);
-    height: 40px;
-    width: 200px;
+    height: 35px;
+    width: 150px;
     box-sizing: border-box;
+    margin-right: -20px;
+    border: 3px solid var(--cor3);
 }
 
 input#entrar{
@@ -84,6 +96,7 @@ input#entrar{
     color: var(--cor0);
     height: 40px;
     width: 200px;
+    margin: 5px;
 }
 
 input#esqueci{
@@ -99,9 +112,8 @@ input#entrar:hover{
     cursor: pointer;
 }
 
+
 input#esqueci:hover{
     background-color: var(--cor4);
     cursor: pointer;
 }
-
-
