@@ -12,24 +12,33 @@
 @media screen and (min-width: 769px) and (max-width: 1024px){ /** imagem na ESQUERDA **/
     body{
         background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+        
     }
 
     section#login{
-        width: 500px;
+        width: 80vw;
+        height: 290px;
     }
 
-    div.emailsenha{
-        width: 450px;
+    div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
     }
+
+    div#form{
+        float: right;
+        width: 70%;
+    }
+
 
     input.emailsenha{
-        width: 400px;
+        width: 90%;
     }
 
-    input#entrar, input#esqueci{
-        width: 450px;
+    input#entrar, a#esqueci{
+        width: 100%;
     }
-
 }
 
 @media screen and (min-width: 1025px) { /** imagem na DIREITA **/
@@ -38,22 +47,35 @@
     }
 
     section#login{
-        width: 550px;
+        width: 950px;
+        height: 300px;
+    }
+
+    div#imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#form{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#form h1{
+        font-size: 2em;
     }
 
     div#form p {
         font-size: 1em;
     }
 
-    div.emailsenha{
-        width: 500px;
-    }
-
     input.emailsenha{
-        width: 450px;
+        width: 90%;
     }
 
-    input#entrar, input#esqueci{
-        width: 500px;
+    input#entrar, a#esqueci{
+        width: 100%;
     }
 }
