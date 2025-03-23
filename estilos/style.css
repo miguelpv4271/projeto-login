@@ -31,7 +31,11 @@ main{
     margin: auto;
     text-align: center;
     height: 100vh;
-    position: relative;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 section#login{
@@ -39,16 +43,10 @@ section#login{
     border-radius: 10px;
     background-color: var(--cor0);
 
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    
-
     overflow: hidden;
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
 
-    transform: translate(-50%, -50%);
     transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
     
@@ -57,7 +55,6 @@ section#login{
 div#imagem{
     height: 200px;
     background: black url(../imagens/pexels-fotometrozero-31012596.jpg) center center/cover no-repeat fixed;
-    display: block;
 }
 
 div#form{
